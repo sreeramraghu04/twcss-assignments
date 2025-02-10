@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sizing</title>
+  </head>
+  <body>
+    <div class="p-10">
+      <div>
+        <!-- Width -->
+        <!-- https://tailwindcss.com/docs/width -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Width and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="p-10 bg-gray-100 border border-black">
+          <p class="w-1/2 border border-black">w-1/2</p>
+          <p class="w-1/3 border border-black">w-1/3</p>
+          <p class="w-1/4 border border-black">w-1/4</p>
+          <p class="w-1/5 border border-black">w-1/5</p>
+          <p class="w-1/6 border border-black">w-1/6</p>
+        </div>
+      </div>
+
+      <div>
+        <!-- in numbers -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">Numbers as Values</h1>
+        </div>
+        <div class="p-10 bg-gray-100 border border-black">
+          <p class="w-5 border border-black">w-5</p>
+          <p class="w-10 border border-black">w-10</p>
+          <p class="w-14 border border-black">w-14</p>
+          <p class="w-16 border border-black">w-16</p>
+          <p class="w-20 border border-black">w-20</p>
+          <p class="w-24 border border-black">w-24</p>
+          <p class="w-28 border border-black">w-28</p>
+          <p class="w-32 border border-black">w-32</p>
+          <p class="w-36 border border-black">w-36</p>
+          <p class="w-40 border border-black">w-40</p>
+          <p class="w-44 border border-black">w-44</p>
+          <p class="w-48 border border-black">w-48</p>
+          <p class="w-52 border border-black">w-52</p>
+          <p class="w-56 border border-black">w-56</p>
+          <p class="w-60 border border-black">w-60</p>
+          <p class="w-64 border border-black">w-64</p>
+          <p class="w-72 border border-black">w-72</p>
+          <p class="w-80 border border-black">w-80</p>
+          <p class="w-96 border border-black">w-96</p>
+          <p class="w-100 border border-black">w-100</p>
+        </div>
+      </div>
+
+      <div>
+        <!-- Max Width -->
+        <!-- https://tailwindcss.com/docs/max-width -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">Max Width</h1>
+        </div>
+        <div class="p-10 bg-gray-100 border border-black">
+          <p class="max-w-3xs border border-black">max-w-3xs</p>
+          <p class="max-w-2xs border border-black">max-w-2xs</p>
+          <p class="max-w-xs border border-black">max-w-xs</p>
+          <p class="max-w-sm border border-black">max-w-sm</p>
+          <p class="max-w-md border border-black">max-w-md</p>
+          <p class="max-w-lg border border-black">max-w-lg</p>
+          <p class="max-w-xl border border-black">max-w-xl</p>
+          <p class="max-w-2xl border border-black">max-w-2xl</p>
+          <p class="max-w-3xl border border-black">max-w-3xl</p>
+          <p class="max-w-4xl border border-black">max-w-4xl</p>
+          <p class="max-w-5xl border border-black">max-w-5xl</p>
+          <p class="max-w-6xl border border-black">max-w-6xl</p>
+          <p class="max-w-7xl border border-black">max-w-7xl</p>
+        </div>
+      </div>
+
+      <div>
+        <!-- Width of the viewport -->
+        <!-- https://tailwindcss.com/docs/width#viewport-width -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">Width of the viewport</h1>
+        </div>
+        <div class="p-10 bg-gray-100 border border-black">
+          <p class="w-screen border border-black">w-screen</p>
+          <p class="w-min border border-black">w-min</p>
+          <p class="w-fit border border-black">w-fit</p>
+          <p class="w-max border border-black">w-max</p>
+          <p class="w-auto border border-black">w-auto</p>
+        </div>
+      </div>
+
+      <div>
+        <!-- 100% of container -->
+        <!-- https://tailwindcss.com/docs/width#container-width -->
+        <!-- <div class="p-10">
+          <h1 class="text-3xl font-bold underline">100% of container</h1>
+        </div> -->
+        <!-- <div class="p-10 bg-gray-100 border border-black">
+        </div> -->
+      </div>
+
+      <div>
+        <!-- Arbitrary Width -->
+        <!-- https://tailwindcss.com/docs/min-width#arbitrary-values -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">Arbitrary Width</h1>
+        </div>
+        <div class="p-10 bg-gray-100 border border-black">
+          <div class="flex flex-col justify-start items-start gap-4">
+            <p class="min-w-3xs border border-black">min-w-3xs</p>
+            <p class="min-w-2xs border border-black">min-w-2xs</p>
+            <p class="min-w-xs border border-black">min-w-xs</p>
+            <p class="min-w-sm border border-black">min-w-sm</p>
+            <p class="min-w-md border border-black">min-w-md</p>
+            <p class="min-w-lg border border-black">min-w-lg</p>
+            <p class="min-w-xl border border-black">min-w-xl</p>
+            <p class="min-w-2xl border border-black">min-w-2xl</p>
+            <p class="min-w-3xl border border-black">min-w-3xl</p>
+            <p class="min-w-4xl border border-black">min-w-4xl</p>
+            <p class="min-w-5xl border border-black">min-w-5xl</p>
+            <p class="min-w-6xl border border-black">min-w-6xl</p>
+            <p class="min-w-7xl border border-black">min-w-7xl</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Height (Most of the same options as widths) -->
+        <!-- https://tailwindcss.com/docs/height -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Height (Most of the same options as widths)
+          </h1>
+        </div>
+        <div class="p-10 bg-gray-100 border border-black">
+          <p class="h-auto border border-black">h-auto</p>
+          <p class="h-[100px] border border-black">h-100px</p>
+          <p class="h-full border border-black">h-full</p>
+          <p class="h-screen border border-black">h-screen</p>
+          <p class="h-dvh border border-black">h-dvh</p>
+          <p class="h-dvw border border-black">h-dvw</p>
+          <p class="h-lvh border border-black">h-lvh</p>
+          <p class="h-lvw border border-black">h-lvw</p>
+        </div>
+      </div>
+
+      <div>
+        <!-- Min Height -->
+        <!-- https://tailwindcss.com/docs/min-height -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">Min Height</h1>
+        </div>
+        <div class="p-10 bg-gray-100 border border-black">
+          <p class="min-h-auto border border-black">min-h-auto</p>
+          <p class="min-h-[100px] border border-black">min-h-100px</p>
+          <p class="min-h-full border border-black">min-h-full</p>
+          <p class="min-h-screen border border-black">min-h-screen</p>
+          <p class="min-h-dvh border border-black">min-h-dvh</p>
+          <p class="min-h-dvw border border-black">min-h-dvw</p>
+          <p class="min-h-lvh border border-black">min-h-lvh</p>
+          <p class="min-h-lvw border border-black">min-h-lvw</p>
+        </div>
+
+        <div>
+    <!-- Max Height -->
+    <!-- https://tailwindcss.com/docs/max-height -->
+          <!-- <div class="p-10">
+            <h1 class="text-3xl font-bold underline">Max Height</h1>
+          </div> -->
+          <!-- <div class="p-10 bg-gray-100 border border-black">
+            <p class="max-h-auto border border-black">max-h-auto</p>
+            <p class="max-h-[100px] border border-black">max-h-100px</p>
+            <p class="max-h-full border border-black">max-h-full</p>
+            <p class="max-h-screen border border-black">max-h-screen</p>
+            <p class="max-h-dvh border border-black">max-h-dvh</p>
+            <p class="max-h-dvw border border-black">max-h-dvw</p>
+            <p class="max-h-lvh border border-black">max-h-lvh</p>
+            <p class="max-h-lvw border border-black">max-h-lvw</p>
+          </div> -->
+        </div>
+        
+      </div>
+  </body>
+</html>

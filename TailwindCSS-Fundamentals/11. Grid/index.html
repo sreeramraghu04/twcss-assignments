@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Grid</title>
+  </head>
+  <body>
+    <div class="p-10">
+      <div>
+        <!-- grids -->
+        <!-- https://tailwindcss.com/docs/grid-template-rows -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Grids and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="border border-black bg-gray-100 p-10">
+          <div>
+            <p class="font-semibold">Grid Template Rows</p>
+            <div class="grid grid-cols-2 grid-rows-3 text-center">
+              <div class="border border-black">01</div>
+              <div class="border border-black">02</div>
+              <div class="border border-black">03</div>
+              <div class="border border-black">04</div>
+              <div class="border border-black">05</div>
+              <div class="border border-black">06</div>
+              <div class="border border-black">07</div>
+              <div class="border border-black">08</div>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold">Grid Template Columns</p>
+            <div class="grid grid-cols-4 grid-rows-2 text-center">
+              <div class="border border-black">01</div>
+              <div class="border border-black">02</div>
+              <div class="border border-black">03</div>
+              <div class="border border-black">04</div>
+              <div class="border border-black">05</div>
+              <div class="border border-black">06</div>
+              <div class="border border-black">07</div>
+              <div class="border border-black">08</div>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold">Grid Row Subgrid</p>
+            <div class="grid grid-flow-col grid-rows-4 gap-4 text-center">
+              <div class="border border-black">01</div>
+              <div class="border border-black">02</div>
+              <div class="border border-black">03</div>
+              <div class="border border-black">04</div>
+              <div class="border border-black">05</div>
+              <div
+                class="border border-red-500 row-span-3 grid grid-rows-subgrid gap-4"
+              >
+                <div class="row-start-2">06</div>
+              </div>
+              <div class="border border-black">07</div>
+              <div class="border border-black">08</div>
+              <div class="border border-black">09</div>
+              <div class="border border-black">10</div>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold">Grid Column Subgrid</p>
+            <div class="grid grid-flow-col grid-cols-11 gap-4 text-center">
+              <div class="border border-black">01</div>
+              <div class="border border-black">02</div>
+              <div class="border border-black">03</div>
+              <div class="border border-black">04</div>
+              <div
+                class="border border-red-500 col-span-3 grid grid-cols-subgrid gap-4"
+              >
+                <div class="col-start-2">05</div>
+              </div>
+              <div class="border border-black">06</div>
+              <div class="border border-black">07</div>
+              <div class="border border-black">08</div>
+              <div class="border border-black">09</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

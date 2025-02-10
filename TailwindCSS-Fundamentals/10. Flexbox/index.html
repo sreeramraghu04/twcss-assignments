@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flex</title>
+  </head>
+  <body>
+    <div class="p-10">
+      <div>
+        <!-- flex -->
+        <!-- https://tailwindcss.com/docs/flex -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Flex and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="p-10 border border-black bg-gray-100">
+          <p class="font-semibold">flex numbers</p>
+          <div class="flex gap-5">
+            <div class="w-14 flex-none bg-red-500">01</div>
+            <div class="w-64 flex-1 bg-red-500">02</div>
+            <div class="w-32 flex-1 bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">flex auto</p>
+          <div class="flex gap-5">
+            <div class="w-14 flex-none bg-red-500">01</div>
+            <div class="w-64 flex-auto bg-red-500">02</div>
+            <div class="w-32 flex-auto bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">flex initial</p>
+          <div class="flex gap-5">
+            <div class="w-14 flex-none bg-red-500">01</div>
+            <div class="w-64 flex-initial bg-red-500">02</div>
+            <div class="w-32 flex-initial bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">flex none</p>
+          <div class="flex gap-5">
+            <div class="w-14 flex-none bg-red-500">01</div>
+            <div class="w-32 flex-none bg-red-500">02</div>
+            <div class="flex-1 bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">flex shrink</p>
+          <div class="flex gap-5">
+            <div class="w-14 flex-none bg-red-500">01</div>
+            <div class="w-64 flex-1 bg-red-500">02</div>
+            <div class="w-32 flex-none bg-red-500">03</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- flex direction -->
+        <!-- https://tailwindcss.com/docs/flex-direction#column -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Flex Directions and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="border border-black bg-gray-100 p-10">
+          <p class="font-semibold">flex row</p>
+          <div class="flex gap-5 text-center">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">flex row-reverse</p>
+          <div class="flex flex-row-reverse gap-5 text-center">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">flex column</p>
+          <div class="flex flex-col gap-5 text-center">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">flex column-reverse</p>
+          <div class="flex flex-col-reverse gap-5 text-center">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">flex wrap</p>
+          <div class="flex flex-wrap gap-5 text-center">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+            <div class="w-[100px] bg-red-500">04</div>
+            <div class="w-[100px] bg-red-500">05</div>
+            <div class="w-[100px] bg-red-500">06</div>
+          </div>
+
+          <!-- <p class="font-semibold">flex wrap-reverse</p>
+          <div class="flex flex-wrap-reverse gap-5 text-center">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+            <div class="w-[100px] bg-red-500">04</div>
+            <div class="w-[100px] bg-red-500">05</div>
+            <div class="w-[100px] bg-red-500">06</div>
+          </div> -->
+        </div>
+      </div>
+
+      <div>
+        <!-- justify items -->
+        <!-- https://tailwindcss.com/docs/justify-items -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Justify Items and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="border border-black bg-gray-100 p-10">
+          <p class="font-semibold">justify-center</p>
+          <div class="flex justify-center items-center gap-5">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">justify-left</p>
+          <div class="flex justify-left items-center gap-5">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">justify-start</p>
+          <div class="flex justify-start items-center gap-5">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">justify-end</p>
+          <div class="flex justify-end items-center gap-5">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">justify-between</p>
+          <div class="flex justify-between items-center gap-5">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">justify-around</p>
+          <div class="flex justify-around items-center gap-5">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+
+          <p class="font-semibold">justify-evenly</p>
+          <div class="flex justify-evenly items-center gap-5">
+            <div class="w-[100px] bg-red-500">01</div>
+            <div class="w-[100px] bg-red-500">02</div>
+            <div class="w-[100px] bg-red-500">03</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- orders -->
+        <!-- https://tailwindcss.com/docs/order -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Order and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="border border-black bg-gray-100 p-10">
+          <p class="font-semibold">order-1</p>
+          <div class="flex gap-5">
+            <div class="w-[100px] bg-red-500 order-1">01</div>
+            <div class="w-[100px] bg-red-500 order-2">02</div>
+            <div class="w-[100px] bg-red-500 order-3">03</div>
+          </div>
+
+          <p class="font-semibold">order-2</p>
+          <div class="flex gap-5">
+            <div class="w-[100px] bg-red-500 order-2">01</div>
+            <div class="w-[100px] bg-red-500 order-1">02</div>
+            <div class="w-[100px] bg-red-500 order-3">03</div>
+          </div>
+
+          <p class="font-semibold">order-none</p>
+          <div class="flex gap-5">
+            <div class="w-[100px] bg-red-500 order-none">01</div>
+            <div class="w-[100px] bg-red-500 order-none">02</div>
+            <div class="w-[100px] bg-red-500 order-none">03</div>
+          </div>
+
+          <p class="font-semibold">order reverse</p>
+          <div class="flex gap-5">
+            <div class="w-[100px] bg-red-500 order-3">01</div>
+            <div class="w-[100px] bg-red-500 order-2">02</div>
+            <div class="w-[100px] bg-red-500 order-1">03</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Grow and shrink -->
+        <!-- https://tailwindcss.com/docs/flex-shrink -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Grow and Shrink and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="border border-black bg-gray-100 p-10">
+          <p class="font-semibold">grow and shrink</p>
+          <div class="flex gap-5">
+            <div class="w-[100px] bg-red-500 grow">01</div>
+            <div class="w-[100px] bg-red-500 shrink">02</div>
+            <div class="w-[100px] bg-red-500 shrink-0">03</div>
+          </div>
+
+          <p class="font-semibold">grow-0</p>
+          <div class="flex gap-5">
+            <div class="w-[100px] bg-red-500 grow-0">01</div>
+            <div class="w-[100px] bg-red-500 shrink">02</div>
+            <div class="w-[100px] bg-red-500 shrink-0">03</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xs: "370px",
+            // => @media (min-width: 370px) { ... }
+
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              vscodebg: "#0D1117",
+              textclr: "#c3d0e5",
+              lghtblutxt: "#9FB1D1",
+              navoptionsclr: "#9ba3b4",
+              crdclr: "#9FB1D1",
+              crdbg: "#25292E",
+              iconcrd: "rgba(255,255,255,0.04)",
+              lstcrd: "rgba(255,255,255,0.07)",
+              btnblu: "#0078d4",
+              cpltbg: "#25292E",
+              yellw: "#ffff00",
+            },
+            fontFamily: {},
+          },
+        },
+      };
+    </script>
+    <title>Colors</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body class="">
+    <div>
+      <!--1-->
+      <div class="">
+        <!--Colors With Different Shades-->
+        <!-- https://tailwindcss.com/docs/customizing-colors  -->
+        <div class="mb-5">
+          <h1 class="text-3xl font-bold flex justify-center underline">
+            Colors and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-11 gap-4 p-10">
+          <!--red-->
+          <div
+            class="p-4 bg-red-50 text-black rounded-lg shadow-md text-center"
+          >
+            Red 50
+          </div>
+          <div
+            class="p-4 bg-red-100 text-black rounded-lg shadow-md text-center"
+          >
+            Red 100
+          </div>
+          <div
+            class="p-4 bg-red-200 text-black rounded-lg shadow-md text-center"
+          >
+            Red 200
+          </div>
+          <div
+            class="p-4 bg-red-300 text-black rounded-lg shadow-md text-center"
+          >
+            Red 300
+          </div>
+          <div
+            class="p-4 bg-red-400 text-black rounded-lg shadow-md text-center"
+          >
+            Red 400
+          </div>
+          <div
+            class="p-4 bg-red-500 text-gray-600 rounded-lg shadow-md text-center"
+          >
+            Red 500
+          </div>
+          <div
+            class="p-4 bg-red-600 text-white rounded-lg shadow-md text-center"
+          >
+            Red 600
+          </div>
+          <div
+            class="p-4 bg-red-700 text-white rounded-lg shadow-md text-center"
+          >
+            Red 700
+          </div>
+          <div
+            class="p-4 bg-red-800 text-white rounded-lg shadow-md text-center"
+          >
+            Red 800
+          </div>
+          <div
+            class="p-4 bg-red-900 text-white rounded-lg shadow-md text-center"
+          >
+            Red 900
+          </div>
+          <div
+            class="p-4 bg-red-950 text-white rounded-lg shadow-md text-center"
+          >
+            Red 950
+          </div>
+          <!--green-->
+          <div
+            class="p-4 bg-green-50 text-black rounded-lg shadow-md text-center"
+          >
+            Green 50
+          </div>
+          <div
+            class="p-4 bg-green-100 text-black rounded-lg shadow-md text-center"
+          >
+            Green 100
+          </div>
+          <div
+            class="p-4 bg-green-200 text-black rounded-lg shadow-md text-center"
+          >
+            Green 200
+          </div>
+          <div
+            class="p-4 bg-green-300 text-black rounded-lg shadow-md text-center"
+          >
+            Green 300
+          </div>
+          <div
+            class="p-4 bg-green-400 text-black rounded-lg shadow-md text-center"
+          >
+            Green 400
+          </div>
+          <div
+            class="p-4 bg-green-500 text-gray-600 rounded-lg shadow-md text-center"
+          >
+            Green 500
+          </div>
+          <div
+            class="p-4 bg-green-600 text-white rounded-lg shadow-md text-center"
+          >
+            Green 600
+          </div>
+          <div
+            class="p-4 bg-green-700 text-white rounded-lg shadow-md text-center"
+          >
+            Green 700
+          </div>
+          <div
+            class="p-4 bg-green-800 text-white rounded-lg shadow-md text-center"
+          >
+            Green 800
+          </div>
+          <div
+            class="p-4 bg-green-900 text-white rounded-lg shadow-md text-center"
+          >
+            Green 900
+          </div>
+          <div
+            class="p-4 bg-green-950 text-white rounded-lg shadow-md text-center"
+          >
+            Green 950
+          </div>
+          <!--blue-->
+          <div
+            class="p-4 bg-blue-50 text-black rounded-lg shadow-md text-center"
+          >
+            Blue 50
+          </div>
+          <div
+            class="p-4 bg-blue-100 text-black rounded-lg shadow-md text-center"
+          >
+            Blue 100
+          </div>
+          <div
+            class="p-4 bg-blue-200 text-black rounded-lg shadow-md text-center"
+          >
+            Blue 200
+          </div>
+          <div
+            class="p-4 bg-blue-300 text-black rounded-lg shadow-md text-center"
+          >
+            Blue 300
+          </div>
+          <div
+            class="p-4 bg-blue-400 text-black rounded-lg shadow-md text-center"
+          >
+            Blue 400
+          </div>
+          <div
+            class="p-4 bg-blue-500 text-gray-600 rounded-lg shadow-md text-center"
+          >
+            Blue 500
+          </div>
+          <div
+            class="p-4 bg-blue-600 text-white rounded-lg shadow-md text-center"
+          >
+            Blue 600
+          </div>
+          <div
+            class="p-4 bg-blue-700 text-white rounded-lg shadow-md text-center"
+          >
+            Blue 700
+          </div>
+          <div
+            class="p-4 bg-blue-800 text-white rounded-lg shadow-md text-center"
+          >
+            Blue 800
+          </div>
+          <div
+            class="p-4 bg-blue-900 text-white rounded-lg shadow-md text-center"
+          >
+            Blue 900
+          </div>
+          <div
+            class="p-4 bg-blue-950 text-white rounded-lg shadow-md text-center"
+          >
+            Blue 950
+          </div>
+          <!--orange-->
+          <div
+            class="p-4 bg-orange-50 text-black rounded-lg shadow-md text-center"
+          >
+            Orange 50
+          </div>
+          <div
+            class="p-4 bg-orange-100 text-black rounded-lg shadow-md text-center"
+          >
+            Orange 100
+          </div>
+          <div
+            class="p-4 bg-orange-200 text-black rounded-lg shadow-md text-center"
+          >
+            Orange 200
+          </div>
+          <div
+            class="p-4 bg-orange-300 text-black rounded-lg shadow-md text-center"
+          >
+            Orange 300
+          </div>
+          <div
+            class="p-4 bg-orange-400 text-black rounded-lg shadow-md text-center"
+          >
+            Orange 400
+          </div>
+          <div
+            class="p-4 bg-orange-500 text-gray-600 rounded-lg shadow-md text-center"
+          >
+            Orange 500
+          </div>
+          <div
+            class="p-4 bg-orange-600 text-white rounded-lg shadow-md text-center"
+          >
+            Orange 600
+          </div>
+          <div
+            class="p-4 bg-orange-700 text-white rounded-lg shadow-md text-center"
+          >
+            Orange 700
+          </div>
+          <div
+            class="p-4 bg-orange-800 text-white rounded-lg shadow-md text-center"
+          >
+            Orange 800
+          </div>
+          <div
+            class="p-4 bg-orange-900 text-white rounded-lg shadow-md text-center"
+          >
+            Orange 900
+          </div>
+          <div
+            class="p-4 bg-orange-950 text-white rounded-lg shadow-md text-center"
+          >
+            Orange 950
+          </div>
+          <!--gray-->
+          <div
+            class="p-4 bg-gray-50 text-black rounded-lg shadow-md text-center"
+          >
+            Gray 50
+          </div>
+          <div
+            class="p-4 bg-gray-100 text-black rounded-lg shadow-md text-center"
+          >
+            Gray 100
+          </div>
+          <div
+            class="p-4 bg-gray-200 text-black rounded-lg shadow-md text-center"
+          >
+            Gray 200
+          </div>
+          <div
+            class="p-4 bg-gray-300 text-black rounded-lg shadow-md text-center"
+          >
+            Gray 300
+          </div>
+          <div
+            class="p-4 bg-gray-400 text-black rounded-lg shadow-md text-center"
+          >
+            Gray 400
+          </div>
+          <div
+            class="p-4 bg-gray-500 text-gray-600 rounded-lg shadow-md text-center"
+          >
+            Gray 500
+          </div>
+          <div
+            class="p-4 bg-gray-600 text-white rounded-lg shadow-md text-center"
+          >
+            Gray 600
+          </div>
+          <div
+            class="p-4 bg-gray-700 text-white rounded-lg shadow-md text-center"
+          >
+            Gray 700
+          </div>
+          <div
+            class="p-4 bg-gray-800 text-white rounded-lg shadow-md text-center"
+          >
+            Gray 800
+          </div>
+          <div
+            class="p-4 bg-gray-900 text-white rounded-lg shadow-md text-center"
+          >
+            Gray 900
+          </div>
+          <div
+            class="p-4 bg-gray-950 text-white rounded-lg shadow-md text-center"
+          >
+            Gray 950
+          </div>
+          <!--yellow-->
+          <div
+            class="p-4 bg-yellow-50 text-black rounded-lg shadow-md text-center"
+          >
+            Yellow 50
+          </div>
+          <div
+            class="p-4 bg-yellow-100 text-black rounded-lg shadow-md text-center"
+          >
+            Yellow 100
+          </div>
+          <div
+            class="p-4 bg-yellow-200 text-black rounded-lg shadow-md text-center"
+          >
+            Yellow 200
+          </div>
+          <div
+            class="p-4 bg-yellow-300 text-black rounded-lg shadow-md text-center"
+          >
+            Yellow 300
+          </div>
+          <div
+            class="p-4 bg-yellow-400 text-black rounded-lg shadow-md text-center"
+          >
+            Yellow 400
+          </div>
+          <div
+            class="p-4 bg-yellow-500 text-gray-600 rounded-lg shadow-md text-center"
+          >
+            Yellow 500
+          </div>
+          <div
+            class="p-4 bg-yellow-600 text-white rounded-lg shadow-md text-center"
+          >
+            Yellow 600
+          </div>
+          <div
+            class="p-4 bg-yellow-700 text-white rounded-lg shadow-md text-center"
+          >
+            Yellow 700
+          </div>
+          <div
+            class="p-4 bg-yellow-800 text-white rounded-lg shadow-md text-center"
+          >
+            Yellow 800
+          </div>
+          <div
+            class="p-4 bg-yellow-900 text-white rounded-lg shadow-md text-center"
+          >
+            Yellow 900
+          </div>
+          <div
+            class="p-4 bg-yellow-950 text-white rounded-lg shadow-md text-center"
+          >
+            Yellow 950
+          </div>
+          <!--cyan-->
+          <div
+            class="p-4 bg-cyan-50 text-black rounded-lg shadow-md text-center"
+          >
+            Cyan 50
+          </div>
+          <div
+            class="p-4 bg-cyan-100 text-black rounded-lg shadow-md text-center"
+          >
+            Cyan 100
+          </div>
+          <div
+            class="p-4 bg-cyan-200 text-black rounded-lg shadow-md text-center"
+          >
+            Cyan 200
+          </div>
+          <div
+            class="p-4 bg-cyan-300 text-black rounded-lg shadow-md text-center"
+          >
+            Cyan 300
+          </div>
+          <div
+            class="p-4 bg-cyan-400 text-black rounded-lg shadow-md text-center"
+          >
+            Cyan 400
+          </div>
+          <div
+            class="p-4 bg-cyan-500 text-gray-600 rounded-lg shadow-md text-center"
+          >
+            Cyan 500
+          </div>
+          <div
+            class="p-4 bg-cyan-600 text-white rounded-lg shadow-md text-center"
+          >
+            Cyan 600
+          </div>
+          <div
+            class="p-4 bg-cyan-700 text-white rounded-lg shadow-md text-center"
+          >
+            Cyan 700
+          </div>
+          <div
+            class="p-4 bg-cyan-800 text-white rounded-lg shadow-md text-center"
+          >
+            Cyan 800
+          </div>
+          <div
+            class="p-4 bg-cyan-900 text-white rounded-lg shadow-md text-center"
+          >
+            Cyan 900
+          </div>
+          <div
+            class="p-4 bg-cyan-950 text-white rounded-lg shadow-md text-center"
+          >
+            Cyan 950
+          </div>
+          <!--violet-->
+          <div
+            class="p-4 bg-violet-50 text-black rounded-lg shadow-md text-center"
+          >
+            Violet 50
+          </div>
+          <div
+            class="p-4 bg-violet-100 text-black rounded-lg shadow-md text-center"
+          >
+            Violet 100
+          </div>
+          <div
+            class="p-4 bg-violet-200 text-black rounded-lg shadow-md text-center"
+          >
+            Violet 200
+          </div>
+          <div
+            class="p-4 bg-violet-300 text-black rounded-lg shadow-md text-center"
+          >
+            Violet 300
+          </div>
+          <div
+            class="p-4 bg-violet-400 text-black rounded-lg shadow-md text-center"
+          >
+            Violet 400
+          </div>
+          <div
+            class="p-4 bg-violet-500 text-gray-600 rounded-lg shadow-md text-center"
+          >
+            Violet 500
+          </div>
+          <div
+            class="p-4 bg-violet-600 text-white rounded-lg shadow-md text-center"
+          >
+            Violet 600
+          </div>
+          <div
+            class="p-4 bg-violet-700 text-white rounded-lg shadow-md text-center"
+          >
+            Violet 700
+          </div>
+          <div
+            class="p-4 bg-violet-800 text-white rounded-lg shadow-md text-center"
+          >
+            Violet 800
+          </div>
+          <div
+            class="p-4 bg-violet-900 text-white rounded-lg shadow-md text-center"
+          >
+            Violet 900
+          </div>
+          <div
+            class="p-4 bg-violet-950 text-white rounded-lg shadow-md text-center"
+          >
+            Violet 950
+          </div>
+        </div>
+      </div>
+      <!--2-->
+      <div class="">
+        <!--Background Colors-->
+        <!-- https://tailwindcss.com/docs/background-color -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Background Colors and its features in TailwindCSS
+          </h1>
+        </div>
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 sm:grid-cols-2 xs:grid-cols-1 gap-4 p-10 flex justify-center"
+        >
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-red-500 text-white font-bold rounded-lg"
+          >
+            Red
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-orange-500 text-white font-bold rounded-lg"
+          >
+            Orange
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-yellow-500 text-white font-bold rounded-lg"
+          >
+            Yellow
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-green-500 text-white font-bold rounded-lg"
+          >
+            Green
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-teal-500 text-white font-bold rounded-lg"
+          >
+            Teal
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-blue-500 text-white font-bold rounded-lg"
+          >
+            Blue
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-indigo-500 text-white font-bold rounded-lg"
+          >
+            Indigo
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-purple-500 text-white font-bold rounded-lg"
+          >
+            Purple
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-cyan-500 text-white font-bold rounded-lg"
+          >
+            Cyan
+          </div>
+
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-lime-500 text-white font-bold rounded-lg"
+          >
+            Lime
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-black text-white font-bold rounded-lg"
+          >
+            Black
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-white text-black font-bold rounded-lg"
+          >
+            White
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-gray-500 text-white font-bold rounded-lg"
+          >
+            Gray
+          </div>
+          <div
+            class="w-40 h-20 flex items-center justify-center bg-pink-500 text-white font-bold rounded-lg"
+          >
+            Pink
+          </div>
+        </div>
+      </div>
+      <!--3-->
+      <div class="">
+        <!--Text Underline-->
+        <!-- https://tailwindcss.com/docs/accent-color -->
+        <!-- https://tailwindcss.com/docs/text-decoration-style -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Text Decoration/Underline and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="p-10 text-2xl">
+          <p class="underline">Underline</p>
+          <p class="line-through mt-2">Line Through</p>
+          <p class="no-underline mt-2">No Underline</p>
+          <p class="underline-offset-2 mt-2">Underline Offset</p>
+          <p class="underline decoration-dotted mt-2">Underline dotted</p>
+          <p class="underline decoration-double mt-2">Underline double</p>
+          <p class="underline decoration-wavy mt-2">Underline wavy</p>
+          <p class="underline decoration-dashed mt-2">Underline dashed</p>
+          <p class="underline decoration-solid mt-2">Underline solid</p>
+        </div>
+      </div>
+      <!--4-->
+      <div>
+        <!--Accent color-->
+        <!-- https://tailwindcss.com/docs/accent-color -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold underline">
+            Accent color and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="text-2xl p-10">
+          <div>
+            <label for="">
+              <input type="checkbox" class="accent-red-500" name="" id="" />
+              accent-clr-red
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox" class="accent-yellow-500" name="" id="" />
+              accent-clr-yellow
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox" class="accent-blue-500" name="" id="" />
+              accent-clr-blue
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox" class="accent-green-500" name="" id="" />
+              accent-clr-green
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox" class="accent-pink-500" name="" id="" />
+              accent-clr-pink
+            </label>
+          </div>
+        </div>
+      </div>
+      <!--5-->
+      <div>
+        <!--Arbitrary colors-->
+        <!-- https://tailwindcss.com/docs/customizing-colors#arbitrary-values -->
+        <div class="p-10">
+          <h1 class="text-3xl font-bold flex justify-center underline">
+            Arbitrary colors and its features in TailwindCSS
+          </h1>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 p-10">
+          <div
+            class="p-4 bg-btnblu text-white rounded-lg shadow-md text-center"
+          >
+            cyan blue #0078d4
+          </div>
+          <div
+            class="p-4 bg-cpltbg text-white rounded-lg shadow-md text-center"
+          >
+            dark blue #25292E
+          </div>
+          <div
+            class="p-4 bg-crdclr text-white rounded-lg shadow-md text-center"
+          >
+            slight blue #9FB1D1
+          </div>
+          <div
+            class="p-4 bg-clifford text-white rounded-lg shadow-md text-center"
+          >
+            clifford #da373d
+          </div>
+          <div
+            class="p-4 bg-textclr text-white rounded-lg shadow-md text-center"
+          >
+            light blue #c3d0e5
+          </div>
+          <div class="p-4 bg-yellw text-white rounded-lg shadow-md text-center">
+            yellow #ffff00
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
