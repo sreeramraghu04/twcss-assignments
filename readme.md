@@ -1,6 +1,4 @@
-# UOTech
-
-## TailwindCSS Assignment
+# TailwindCSS Assignment
 
 Tailwind CSS assignments typically involve practical tasks that help you learn and apply Tailwind’s utility-first approach. Here are some common types of assignments with a short description:
 
